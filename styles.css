@@ -1,0 +1,92 @@
+body {
+  font-family: sans-serif;
+}
+
+#shapes {
+  width: 500px;
+  height: 500px;
+  margin-top: 50px;
+  border-radius: 50%;
+  background: blanchedalmond;
+}
+
+#topRect {
+  width: 30px;
+  height: 150px;
+  background-color: orange;
+}
+
+#bottomRect {
+  width: 130px;
+  height: 30px;
+  background-color: orange;
+}
+
+#circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: yellowgreen;
+}
+
+#ellipse {
+  width: 120px;
+  height: 150px;
+  position: relative;
+  border-radius: 50%;
+  background-color: yellowgreen;
+}
+
+#ellipse:after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 100px;
+  top: 25px;
+  left: 25px;
+  border-radius: 50%;
+  background: blanchedalmond;
+}
+
+#triangle {
+  width: 0;
+  position: relative;
+  border-right: 60px solid transparent;
+  border-left: 60px solid transparent;
+  border-top: 130px solid plum;
+}
+
+#triangle:after {
+  content: "";
+  position: absolute;
+  top: -130px;
+  left: -30px;
+  border-right: 30px solid transparent;
+  border-left: 30px solid transparent;
+  border-top: 70px solid blanchedalmond;
+}
+
+#eshape {
+  width: 100px;
+  height: 80px;
+  position: relative;
+  border-top: 100px solid gold;
+  border-left: 20px solid gold;
+  border-bottom: 20px solid gold;
+  border-radius: 50%;
+}
+
+#eshape:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  top: -88px;
+  left: 7px;
+  background: white;
+  border-top: 50px solid white;
+  border-left: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-radius: 50%;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+}
